@@ -65,12 +65,29 @@ ul {
 ol {
   list-style-type: upper-roman;
 }
+li:nth-child(1) {
+    color: green;
+}
+li:nth-child(2n-2) {
+    color: brown;
+}
+li:nth-child(odd) {
+    font-size: 200%;
+}
+div:nth-child(even) {
+    color: red;
+}
 a:hover {
   background-color:DeepSkyBlue;
+  font-size: 36px;
 }
 a {
  background-color: orange;
  color: Black;
+ font-size: 14px;
+ transition-property: font-size;
+ transition-duration: 4s;
+ transition-delay: 2s;
 }
 img {
   border-style: double;
@@ -102,4 +119,20 @@ footer P.a {
   line-height: 50px;
   font-size: 20px;
   position: inherit;
+}
+.fa-project-diagram {
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+.fa-project-diagram:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.fa-pagelines {
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+.fa-pagelines:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
