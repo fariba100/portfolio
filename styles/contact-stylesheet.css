@@ -1,0 +1,212 @@
+body {
+  background-color: LightGrey;
+  font-size: 75%;
+  border-style: dashed;
+  border-width: 4px;
+  border-color: Green;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+a:hover {
+  background-color:DeepSkyBlue;
+  font-size: 36px;
+}
+a {
+ background-color: orange;
+ color: Black;
+ font-size: 14px;
+ transition-property: font-size;
+ transition-duration: 4s;
+ transition-delay: 2s;
+}
+h1 {
+  color: Brown;
+  text-align: center;
+  border-style: double;
+  border-width: 9px;
+  border-color: Brown;
+  padding: 15px;
+  text-shadow: 3px 2px black;
+  letter-spacing: 2px;
+  background-color: linen;
+  font-family: 'Indie Flower', cursive;
+  }
+  p {
+    font-family: cursive;
+    color: brown;
+    font-weight: bold;
+    font-size: 20px;
+  }
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 20px;
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem;
+}
+label {
+font-family: 'Indie Flower', cursive;
+font-size: 20px;
+font-style: oblique;
+color: green;
+}
+legend {
+font-family: 'Indie Flower', cursive;
+font-size: 20px;
+font-style: oblique;
+color: green;
+}
+input[type=submit] {
+  width: 25%;
+  background-color: SteelBlue;
+}
+input[type=password]:focus {
+  background-color: seagreen;
+  outline: none;
+}
+
+input {
+  border-radius: 15px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset input {
+  display: inline;
+}
+
+/* Hide the browser's default checkbox. */
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Customize the labels */
+.checkbox label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When a checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkmark:after {
+  display: block;
+}
+
+/* Style the chackmar/indicator */
+.checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* The container */
+.container {
+
+  position: relative;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark2 {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark2 {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark2:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark2:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
