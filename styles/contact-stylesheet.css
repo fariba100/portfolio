@@ -210,3 +210,7 @@ fieldset input {
 	border-radius: 50%;
 	background: white;
 }
+nav a {
+  padding: 1rem;
+  margin: 1rem;
+}

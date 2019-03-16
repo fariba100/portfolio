@@ -136,3 +136,7 @@ footer P.a {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
+nav a {
+  padding: 1rem;
+  margin: 1rem;
+}
